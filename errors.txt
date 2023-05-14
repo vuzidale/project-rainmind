@@ -2,10 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 72: invalid syntax
-    renpy.movie_cutscene ('images/loading.ogv') with fade
-                                                 ^
-    
+File "game/script.rpy", line 459: expected statement.
+    Гриша: "Извините, конечно, но правда, там продуктов то, не целая тележка пробейте вы да и всё"
+         ^
+
+File "game/script.rpy", line 465: expected statement.
+    Гриша: "Ну может и вправду уже выключили, ну... удаленно."
+         ^
+
+File "game/script.rpy", line 468: expected statement.
+    Гриша: "Не злитесь, бывает и такое."
+         ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed Apr 12 23:15:03 2023
+Mon May 15 00:26:57 2023

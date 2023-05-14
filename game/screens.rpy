@@ -297,7 +297,7 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Начать") action Start()
+            textbutton _("НОВАЯ ИГРА") action Start()
 
         else:
 
@@ -305,9 +305,9 @@ screen navigation():
 
             textbutton _("Сохранить") action ShowMenu("save")
 
-        textbutton _("Загрузить") action ShowMenu("load")
+        textbutton _("ЗАГРУЗИТЬ") action ShowMenu("load")
 
-        textbutton _("Параметры") action ShowMenu("preferences")
+        textbutton _("ПАРАМЕТРЫ") action ShowMenu("preferences")
 
         if _in_replay:
 
@@ -317,17 +317,17 @@ screen navigation():
 
             textbutton _("Главное меню") action MainMenu()
 
-        textbutton _("Об игре") action ShowMenu("about")
+        textbutton _("ОБ ИГРЕ") action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Помощь") action ShowMenu("help")
+            textbutton _("ПОМОЩЬ") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and Web.
-            textbutton _("Выход") action Quit(confirm=not main_menu)
+            textbutton _("ВЫХОД") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
